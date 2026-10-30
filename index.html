@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Worth It — Side Hustle Profit Tracker | Know Your Real $/Hour</title>
+<meta name="description" content="The side hustle tracker that tells you your real $/hour after every fee, cost and hour. Sales, expenses and time logs with automatic Etsy, eBay, Poshmark and Mercari fees, a pricing calculator, monthly P&L and tax set-aside. Excel + Google Sheets. One payment, no subscription.">
+<style>
+  :root{--ink:#111827;--em:#10b981;--emd:#065f46;--bg:#f9fafb;--card:#fff;--mut:#4b5563;--line:#e5e7eb}
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6}
+  .wrap{max-width:1020px;margin:0 auto;padding:0 24px}
+  header{background:var(--ink);color:#fff;padding:72px 0 64px}
+  .brand{font-weight:800;letter-spacing:.14em;font-size:13px;color:var(--em);text-transform:uppercase}
+  h1{font-size:52px;line-height:1.08;font-weight:800;margin:14px 0 6px}
+  h1 .accent{color:var(--em)}
+  .sub{font-size:21px;color:#d1d5db;max-width:640px}
+  .cta-row{margin-top:32px;display:flex;gap:14px;flex-wrap:wrap}
+  .btn{display:inline-block;padding:15px 28px;border-radius:12px;font-weight:700;font-size:16px;text-decoration:none}
+  .btn-primary{background:var(--em);color:#fff}
+  .btn-ghost{background:transparent;color:#fff;border:2px solid #374151}
+  .price-note{margin-top:14px;color:#9ca3af;font-size:14px}
+  section{padding:64px 0}
+  h2{font-size:32px;font-weight:800;margin-bottom:10px}
+  .lead{color:var(--mut);font-size:18px;max-width:680px}
+  .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px;margin-top:34px}
+  .stat{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:26px}
+  .stat .k{font-size:12px;font-weight:700;letter-spacing:.1em;color:var(--mut);text-transform:uppercase}
+  .stat .v{font-size:40px;font-weight:800;margin-top:6px}
+  .stat.hero{background:var(--em);border-color:var(--em)}
+  .stat.hero .k{color:#d1fae5}.stat.hero .v{color:#fff}
+  .feats{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:14px 28px;margin-top:30px}
+  .feats li{list-style:none;padding-left:30px;position:relative;font-size:17px;color:#1f2937}
+  .feats li::before{content:"";position:absolute;left:0;top:9px;width:12px;height:12px;border-radius:50%;background:var(--em)}
+  .feats b{font-weight:700}
+  .band{background:#ecfdf5;border-top:1px solid #d1fae5;border-bottom:1px solid #d1fae5}
+  blockquote{font-size:24px;font-weight:600;line-height:1.45;max-width:760px}
+  blockquote footer{margin-top:14px;font-size:15px;color:var(--mut);font-weight:400}
+  .faq{margin-top:26px;display:grid;gap:12px}
+  details{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px 22px}
+  summary{font-weight:700;cursor:pointer;font-size:17px}
+  details p{color:var(--mut);margin-top:8px}
+  .final{background:var(--ink);color:#fff;text-align:center}
+  .final h2{color:#fff}
+  .final .lead{color:#d1d5db;margin:0 auto}
+  footer.site{padding:34px 0;color:#6b7280;font-size:14px;text-align:center}
+  @media(max-width:640px){h1{font-size:38px}header{padding:52px 0 46px}section{padding:46px 0}}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="brand">Worth It</div>
+    <h1>Stop guessing.<br>Know your <span class="accent">real $/hour.</span></h1>
+    <p class="sub">The side hustle profit tracker built around the one number every other tracker buries: what you actually earn per hour, after every platform fee, every cost, and every hour you worked.</p>
+    <div class="cta-row">
+      <a class="btn btn-primary" href="https://www.getly.store/store/worth-it-mvlbtwi5">Get the tracker — $19</a>
+      <a class="btn btn-ghost" href="https://www.getly.store/store/worth-it-mvlbtwi5">Try the free $/hour calculator</a>
+    </div>
+    <p class="price-note">One payment. Yours forever. No subscription. Excel + Google Sheets.</p>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <h2>A good month, until the hours went in</h2>
+    <p class="lead">Demo month from the tracker itself — the shape will feel familiar:</p>
+    <div class="cards">
+      <div class="stat"><div class="k">Net received (after fees)</div><div class="v">$115.53</div></div>
+      <div class="stat"><div class="k">Expenses nobody counted</div><div class="v">$60.98</div></div>
+      <div class="stat"><div class="k">“Profit”</div><div class="v">$54.55</div></div>
+      <div class="stat"><div class="k">Hours worked</div><div class="v">5.6</div></div>
+      <div class="stat hero"><div class="k">★ Real $ / hour</div><div class="v">$9.74</div></div>
+      <div class="stat"><div class="k">Tax pot to set aside</div><div class="v">$10.91</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap">
+    <blockquote>“$54 of profit sounded fine — until the hours said $9.74 an hour. That's less than a part-time job, and it's the number that changes every decision after it.”
+    <footer>The demo data is fictional. The math is not — run yours free in 60 seconds.</footer></blockquote>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>What it does</h2>
+    <p class="lead">One workbook. Thirty seconds per sale. Answers, not bookkeeping homework.</p>
+    <ul class="feats">
+      <li><b>Real $/hour dashboard</b> — per hustle and overall, always up to date</li>
+      <li><b>Automatic platform fees</b> — Etsy, eBay, Poshmark, Mercari, Facebook, direct (all editable)</li>
+      <li><b>Expense log</b> — catches filament, mailers, tools, the costs you forget</li>
+      <li><b>Time log</b> — rough and honest beats precise and never</li>
+      <li><b>Pricing calculator</b> — the minimum list price that pays your target hourly rate, before you list</li>
+      <li><b>Monthly P&L + tax set-aside pot</b> — see which months pay, and what to hold back</li>
+      <li><b>Up to 5 hustles</b> in one workbook — makers, Etsy, reselling, services</li>
+      <li><b>Works on your phone</b> — free Google Sheets app, or Excel / Numbers on desktop</li>
+    </ul>
+    <div class="faq">
+      <details><summary>Why not the big 17-tab reseller trackers?</summary><p>They're built for full-time resellers with warehouse inventory. Worth It is built for side hustlers who want the answer in 30 seconds a sale — not a second job doing bookkeeping.</p></details>
+      <details><summary>What do I get when I buy?</summary><p>Instant download: the clean tracker, a filled demo copy so you can see a finished month, and a Quick Start Guide PDF. Personal-use license — run all your own businesses on it, forever.</p></details>
+      <details><summary>How do payments work?</summary><p>The store runs on Getly with secure USDT/USDC checkout and a 30-day refund window on every purchase. If the file doesn't work in your spreadsheet app, you get it fixed or refunded.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="final">
+  <div class="wrap">
+    <h2>Your hustle is already keeping books.<br>They're in your head, and they're flattering you.</h2>
+    <p class="lead">Write them down once. Let the real number make the decisions.</p>
+    <div class="cta-row" style="justify-content:center">
+      <a class="btn btn-primary" href="https://www.getly.store/store/worth-it-mvlbtwi5">Get Worth It — $19</a>
+    </div>
+  </div>
+</section>
+
+<footer class="site">Worth It — a planning tool. Figures are estimates for your own decisions, not financial or tax advice.</footer>
+</body>
+</html>
